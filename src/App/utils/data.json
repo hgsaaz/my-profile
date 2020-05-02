@@ -1,33 +1,13 @@
-Free personal profile website template for everyone for striking online presence.
-
-## My-profile
-
-Check this out : [My-profile](https://hussaings.gitlab.io/my-profile/)
-
-Download the source code from github(https://hussaings.gitlab.io/my-profile/) and update
-```
-src/App/utils/data.json
-```
-to create a website for you.
-<br/>
-<br/>
-Note: Do not create a new node or delete a node from data.json
-<br/>
-Note: Please do not add empty strings in data.json
-<br/>
-<br/>
-
-```
 {
     "name": "Hussain Gadisaaz",
-    "profiles": [                                                           // list of profiles to show
+    "profiles": [
         "I'm Salesforce Developer",
         "I'm Vlocity Developer",
         "I'm ReactJs Developer",
         "I'm Freelancer"
     ],
-    "profile_url": "https://hussaings.gitlab.io/my-profile/profile.jpg",   // profile img url
-    "certifications":[                                                     // add a new subnode to add new certificate
+    "profile_url": "https://hussaings.gitlab.io/my-profile/profile.jpg",
+    "certifications":[
         {
             "image_url":"https://hussaings.gitlab.io/my-profile/trailhead.png",
             "title":"167",
@@ -39,15 +19,14 @@ Note: Please do not add empty strings in data.json
             "subtitle":"Certified"
         }
     ],
-    "skills": [                                                             // add a new subnode for new
-        {                                                                   // skill
+    "skills": [
+        {
             "name": "Salesforce",
             "percentage": "65"
         },
         {
             "name": "Salesforce Vlocity",
-            "percentage": "15"                                              // add percentage number 
-                                                                            // do not add % sign
+            "percentage": "15"
         },
         {
             "name": "Salesforce - Lightning",
@@ -72,13 +51,13 @@ Note: Please do not add empty strings in data.json
         "skype": "live:hgsaaz",
         "linkedin": "Hussain Gadisaaz"
     },
-    "experience": [                                                             // add a new subnode for new 
-        {                                                                       // experience
+    "experience": [
+        {
             "designation": "Vlocity Developer",
             "duration": "April 2020 - Present",
             "organization": "Vlocity Inc, Bangalore, India",
             "extra": [
-                "Working on Vlocity Products.",                                 // add new item for new point
+                "Working on Vlocity Products.",
                 "Customization on Omniscripts, Integration Procedures, Data Raptors and other VLocity tools."
             ]
         },
@@ -94,8 +73,8 @@ Note: Please do not add empty strings in data.json
             ]
         }
     ],
-    "education": [                                                                  // add a new subnode for
-        {                                                                           // extra education
+    "education": [
+        {
             "course": "Bachelor's in Technology",
             "duration": "2013 - 2017",
             "institution": "Geetanjali Institute of Technical Studies, India",
@@ -106,4 +85,3 @@ Note: Please do not add empty strings in data.json
         }
     ]
 }
-```

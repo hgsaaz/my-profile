@@ -1,0 +1,27 @@
+image: node:13.13
+
+cache:
+  paths:
+    - node_modules/
+
+variables:
+  PUBLIC_URL: "/my-profile" # slash is important
+
+pages:
+  stage: deploy
+  environment: Stage
+  only:
+    - master
+  before_script:
+    #- npm i -g yarn
+
+  script:
+    - yarn install
+    - yarn build
+    - rm -rf public
+    - cp -r build public/
+
+    
+  artifacts:
+    paths:
+    - public

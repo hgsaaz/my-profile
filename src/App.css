@@ -1,0 +1,142 @@
+/* Pallette*/
+
+:root {
+  --primary-light-bg-color: #e4edf9;
+  --secondary-light-bg-color: #1f5297;
+  --priamry-fade-bg-color: #149ddd;
+  --primary-dark-color: #343a40;
+}
+
+/* COLORS */
+
+.text-primary-fade {
+  color: var(--priamry-fade-bg-color)
+}
+
+.text-primary-light {
+  color: var(--primary-light-bg-color)
+}
+
+/* BACKGROUND */
+
+.bg-primary-light {
+  background-color: var(--primary-light-bg-color)
+}
+
+.bg-secondary-light {
+  background-color: var(--secondary-light-bg-color)
+}
+
+.bg-primary-fade {
+  background-color: var(--priamry-fade-bg-color)
+}
+
+/* BORDER */
+
+.border-secondary-light {
+  border-color: var(--secondary-light-bg-color)
+}
+
+.border-primary-dark {
+  border-color: var(--primary-dark-color)
+}
+
+.border-primary-light {
+  border-color: var(--primary-light-bg-color)
+}
+
+/* HELPER */
+
+.cursor{
+  cursor: pointer;
+}
+
+/* HEADER */
+
+.mode-icon { 
+  font-size: 25px;
+}
+
+/* HOME PAGE */
+
+.hero {
+  padding: 110px 0px 20px 0px;
+}
+
+.img-profile {
+  width: 250px;
+  height: 300px;
+}
+
+.hero-icon {
+  width: 60px;
+  height: 60px;
+}
+
+/* ABOUT PAGE */
+
+.resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 5px;
+  background: var(--primary-light-bg-color);
+  border: 2px solid var(--primary-dark-color);
+}
+
+.resume-item {
+  border-left: 2px solid var(--primary-dark-color);
+}
+
+/* SKILLS PAGE*/
+
+.skill {
+  height: 50px;
+}
+
+/* CONNECT PAGE*/
+
+.connect-icon {
+  width: 44px;
+  height: 44px;
+  font-size: 18px;
+}
+
+/* BACK TO TOP */
+.back-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  transition: display 0.5s ease-in-out;
+}
+
+/*------------------
+	Responsive
+---------------------*/
+
+@media (min-width: 1200px) {}
+
+/* Medium screen : 992px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+/* Tablet :768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+/* small Mobile :320px. */
+
+@media only screen and (max-width: 479px) {
+  .hero {
+    padding: 80px 0px 20px 0px;
+  }
+  .img-profile {
+    width: 230px;
+    height: 275px;
+  }
+}
+
+@media only screen and (max-width: 370px) {}
